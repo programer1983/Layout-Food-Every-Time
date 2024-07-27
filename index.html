@@ -20,30 +20,32 @@
                         <li class="menu__item"><a class="menu__link" href="#">Booking</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Get Apps</a></li>
                     </ul>
-                    <button class="nav__button" type="button">Sign In</button>
+                    <button class="nav__btn" type="button">Sign In</button>
                 </nav>
             </div>
         </header>
         <main>
             <section class="hero">
-                <div class="container">
-                    <h1 class="hero__title title">Special Food Every Time For You!</h1>
-                    <div class="hero_description">
-                        <p>Are you hungry because you're home now? Don't worry, now you can order food via yaour cellphone!</p>
+                <div class="container hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title title title--lines">Special Food Every Time For You!</h1>
+                        <div class="hero__description">
+                            <p>Are you hungry because you're home now? Don't worry, now you can order food via yaour cellphone!</p>
+                        </div>
+                        <form class="hero__form search-form" action="">
+                             <div class="search-form__inner">
+                                <label class="search-form__label" for="search">Search Food</label>
+                                <input class="search-form__input" type="text" id="search" placeholder="eg : Cheese Burgers ...">
+                                <button class="earch-form__btn btn" type="submit">Search</button>
+                             </div>
+                        </form>
                     </div>
-                    <form class="hero__form search-form" action="">
-                         <div class="search-form__inner">
-                            <label class="search-form__label" for="search">Search Food</label>
-                            <input class="search-form__input" type="text" id="search" placeholder="eg : Cheese Burgers ...">
-                            <button class="earch-form__btn btn" type="submit">Search</button>
-                         </div>
-                    </form>
-                    <a class="arrow__link" href=""></a>
+                    <a class="arrow__link" href="#"></a>
                 </div>
             </section>
             <section class="popular">
                 <div class="container">
-                    <h2 class="title">Popular Food Today</h2>
+                    <h2 class="title title--lines">Popular Food Today</h2>
                     <div class="popular__description">
                         <p>Tincidunt integer facilisis lacinia morbi cras vitae purus. Mauris, amet, massa donec aenean sed sem.</p>
                     </div>
@@ -79,7 +81,7 @@
                             </article>
                         </li>
                     </ul>
-                    <a class="arrow__link" href=""></a>
+                    <!-- <a class="arrow__link" href=""></a> -->
                 </div>
             </section>
             <section class="about">
