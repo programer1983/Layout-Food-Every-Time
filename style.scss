@@ -1,10 +1,12 @@
 @import "./scss/abstract/vars";
+@import "./scss/abstract/mixins";
 
 @import "./scss/base/reset";
 @import "./scss/base/fonts";
 @import "./scss/base/global";
 
 @import "./scss/sections/hero";
+@import "./scss/sections/popular";
 
 @import "./scss/layouts/header";
 @import "./scss/sections/hero";
@@ -12,3 +14,4 @@
 @import "./scss/components/search-form";
 @import "./scss/components/_btns";
 @import "./scss/components/arrow-link";
+@import "./scss/components/product-card";
