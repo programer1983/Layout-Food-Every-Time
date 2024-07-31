@@ -1,0 +1,72 @@
+.about {
+    margin-bottom: 15rem;
+    &__inner {
+       display: flex;
+       gap: 10rem;
+    }
+    display: flex;
+    &__content {
+        width: 44rem;
+    }
+    .about__title{
+        margin-bottom: 3rem;
+        span{
+          display: block;
+          font-size: 20px;
+          font-weight: 700;
+          color: $c-green;
+          margin-bottom: 2rem;
+          -webkit-text-stroke: 0;
+        }
+    }
+    &__text {
+        color: rgba($c-black, 0.5);
+        font-size: 16px;
+        margin-bottom: 4.4rem;
+    }
+    &__link {
+    }
+    &__images {
+        position: relative;
+        border-radius: 50%;
+        width: 54rem;
+        height: 54rem;
+        background-image: url("./../../images/table.webp"),;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: $c-green;
+            width: 54.5rem;
+            height: 54.5rem;
+            z-index: -1;
+            border-radius: 50%;
+            top: -5px;
+            left: -2px;
+        }
+    }
+    &__breakfast {
+        position: relative;
+        width: 19rem;
+        height: 19rem;
+        transform: translateY(-3rem);
+    }
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+    &__price {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 0;
+        background-color: $c-green;
+        border-radius: 100px;
+        color: $c-white;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $font_title;
+        padding: 7px 13px;
+    }
+}
