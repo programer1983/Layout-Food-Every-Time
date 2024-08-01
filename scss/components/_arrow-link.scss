@@ -24,4 +24,10 @@
         background-size: contain;
         background-position: top center;
     }
+    &--green{
+        background-color: $c-green;
+        &::before{
+          background-image: url("./../../images/arc_green.svg");
+        }
+    }
 }
