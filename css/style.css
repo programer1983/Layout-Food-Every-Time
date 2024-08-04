@@ -385,6 +385,11 @@ body {
 .reviews__arrow--next.swiper-button-disabled {
   transform: scaleX(-1);
 }
+.reviews__slider-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -417,69 +422,48 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero {
-  position: relative;
-  height: 120rem;
-  padding-top: 14rem;
-  background-image: url("./../../images/hero_ellipse.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom 11rem;
-  margin-bottom: 8rem;
+.footer {
+  background-color: #121212;
+  padding: 13rem 0 10rem;
 }
-.hero::before, .hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 53rem;
-  height: 50rem;
-  background-image: url("./../../images/big_burger.webp"), url("./../../images/white_ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: right bottom, left top;
-  background-size: 48rem 37rem, 46rem 46rem;
-}
-.hero::before {
-  left: 3rem;
-}
-.hero::after {
-  right: 3rem;
-  transform: scaleX(-1);
-}
-.hero .hero__arrow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 8rem;
-}
-.hero__inner {
-  height: 100%;
-  display: grid;
+.footer__inner {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
-.hero__content {
-  transform: translateY(-50%);
-}
-.hero__title {
-  color: #FFFFFF;
-  text-stroke: 2px #FFFFFF;
-  -webkit-text-stroke: 2px #FFFFFF;
-  max-width: 80rem;
+  gap: 60px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 3rem;
 }
-.hero__title::before, .hero__title::after {
-  margin-top: -6rem;
-}
-.hero__description {
+.footer__text {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.8rem;
-  text-align: center;
-  max-width: 48rem;
-  margin: 0 auto;
-  margin-bottom: 10rem;
+  max-width: 38rem;
 }
+.footer__menu {
+  display: flex;
+  gap: 7rem;
+}
+.footer__menu-link {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.social {
+  display: flex;
+  gap: 4rem;
+}
+.social__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #FFFFFF;
+}
+
 .search-form__inner {
   max-width: 57rem;
   margin: 0 auto;

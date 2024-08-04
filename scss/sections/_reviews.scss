@@ -46,6 +46,8 @@
     &__slider-list {
     }
     &__slider-item {
+        display: flex;
+        flex-direction: column;
     }
 }
 

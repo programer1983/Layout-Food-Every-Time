@@ -1,0 +1,51 @@
+.footer {
+    background-color: $c-black;
+    padding: 13rem 0 10rem;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+    }
+    &__logo {
+    }
+    &__text {
+        color: rgba($c-white, 0.5);
+        max-width: 38rem;
+    }
+    &__menu {
+        display: flex;
+        gap: 7rem;
+    }
+    &__menu-item {
+    }
+    &__menu-link {
+        color: $c-white;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+}
+
+.logo {
+    &__img {
+    }
+}
+.social {
+    display: flex;
+    gap: 4rem;
+    &__item {
+    }
+    &__link {
+        display: block;
+        width: 24px;
+        height: 24px;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-position: center;
+        -webkit-mask-position: center;
+        background-color: $c-white;
+    }
+}
