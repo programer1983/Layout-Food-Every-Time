@@ -1,7 +1,15 @@
 .popular {
     margin-bottom: 12rem;
     &__title {
-        margin-bottom: 1.5rem
+        margin-bottom: 1.5rem;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform .5s ease;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     &__description {
         max-width: 52rem;
@@ -10,6 +18,14 @@
         color: rgba($c-black, 0.5);
         text-align: center;
         margin-bottom: 19rem;
+        transform: translateY(70px);
+        opacity: 0;
+        transition: transform .5s ease;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     &__list {
         display: grid;
@@ -19,6 +35,40 @@
         align-items: end;
     }
     &__item {
+        transition: .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &--item-1{
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform .5s ease;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--item-2{
+        transform: translateY(100px);
+        opacity: 0;
+        transition: transform .5s ease;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--item-3{
+        transform: translateY(140px);
+        opacity: 0;
+        transition: transform .5s ease;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     &__arrow {
     }

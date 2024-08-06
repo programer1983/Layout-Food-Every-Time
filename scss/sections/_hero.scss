@@ -52,9 +52,16 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 3rem;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: .3s ease;
         &::before,
         &::after{
             margin-top: -6rem;
+        }
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
         }
     }
     &__description {
@@ -64,8 +71,24 @@
         max-width: 48rem;
         margin: 0 auto;
         margin-bottom: 10rem;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: .3s ease .5s;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     &__form {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: .3s ease .7s;
+
+        &.active{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 }
 

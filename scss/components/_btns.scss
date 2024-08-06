@@ -8,3 +8,10 @@
     padding: 2rem 4.5rem;
     cursor: pointer;
 }
+
+.btn--hover{
+    transition: .3s ease;
+    &:hover{
+        background-color: #c2563e;
+    }
+}

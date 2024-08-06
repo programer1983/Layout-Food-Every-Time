@@ -4,9 +4,17 @@
        display: flex;
        gap: 10rem;
     }
-    display: flex;
+    // display: flex;
     &__content {
         width: 44rem;
+        transform: translateX(-50px);
+        opacity: 0;
+        transition: .3s ease .3s;
+
+        &.active{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
     .about__title{
         margin-bottom: 3rem;
@@ -31,24 +39,34 @@
         border-radius: 50%;
         width: 54rem;
         height: 54rem;
-        background-image: url("./../../images/table.webp"),;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+        // background-image: url("./../../images/table.webp"),;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: center;
+        transform: translateX(50px);
+        opacity: 0;
+        transition: .5s ease .3s;
+
+        &.active{
+            transform: translateX(0);
+            opacity: 1;
+        }
         &::before{
             content: "";
             position: absolute;
             background-color: $c-green;
-            width: 54.5rem;
-            height: 54.5rem;
+            width: 56rem;
+            height: 56rem;
             z-index: -1;
             border-radius: 50%;
-            top: -5px;
-            left: -2px;
+            top: -10px;
+            left: -3px;
         }
     }
     &__breakfast {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 19rem;
         height: 19rem;
         transform: translateY(-3rem);

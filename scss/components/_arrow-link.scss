@@ -10,6 +10,11 @@
     background-repeat: no-repeat;
     background-size: 2.4rem;
     background-position: center;
+    transition: .3s ease;
+
+    &:hover{
+       transform: scale(1.2);
+    }
 
     &::before{
         content: "";
