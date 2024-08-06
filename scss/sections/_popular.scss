@@ -35,10 +35,6 @@
         align-items: end;
     }
     &__item {
-        transition: .3s ease;
-        &:hover{
-            transform: scale(1.1);
-        }
     }
     &--item-1{
         transform: translateY(50px);
@@ -51,7 +47,7 @@
         }
     }
     &--item-2{
-        transform: translateY(100px);
+        transform: translateY(150px);
         opacity: 0;
         transition: transform .5s ease;
 
@@ -61,7 +57,7 @@
         }
     }
     &--item-3{
-        transform: translateY(140px);
+        transform: translateY(200px);
         opacity: 0;
         transition: transform .5s ease;
 

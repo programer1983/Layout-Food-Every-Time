@@ -3,6 +3,27 @@
     background-color: $c-white;
     border-radius: 2.4rem;
     padding: 24rem 5rem 4rem;
+    transition:  all .3s ease;
+    &:hover{
+        background-color: $c-black;
+        .product-card__content{
+            transform: translateY(-7rem);
+        }
+        .product-card__img{
+            width: 27rem;
+            height: 27rem;
+            bottom: 15rem;
+        }
+        .product-card__name{
+            color: $c-white;
+        }  
+        .product-card__price{
+            
+        }
+        .product-card__order{
+            opacity: 1;
+        }
+    }
 
     &::before{
        @include psewdo;
