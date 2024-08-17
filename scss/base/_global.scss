@@ -1,5 +1,8 @@
 html{
     font-size: 10px;
+    &.unscroll{
+        overflow: hidden;
+    }
 }
 
 body{
@@ -9,6 +12,7 @@ body{
     line-height: 1.5;
     color: $c-black;
     background-color: $c-white;
+    overflow-x: hidden;
 }
 
 .wrapper{

@@ -71,6 +71,9 @@ a {
 html {
   font-size: 10px;
 }
+html.unscroll {
+  overflow: hidden;
+}
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -79,6 +82,7 @@ body {
   line-height: 1.5;
   color: #121212;
   background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -481,6 +485,11 @@ body {
 .header--btn:hover {
   background-color: #FF7352;
 }
+@media (max-width: 765px) {
+  .header {
+    padding: 2rem 0;
+  }
+}
 
 .nav {
   display: flex;
@@ -494,6 +503,11 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.8rem;
   cursor: pointer;
+}
+@media (max-width: 765px) {
+  .nav__btn {
+    display: none;
+  }
 }
 
 .menu {
@@ -509,6 +523,84 @@ body {
 .menu__link:hover {
   border-color: #FF7352;
   color: #FFFFFF;
+}
+@media (max-width: 765px) {
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    right: 0;
+    background-color: #121212;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    row-gap: 4rem;
+    font-size: 3rem;
+    transition: 0.3s ease;
+  }
+}
+.menu.active-menu {
+  left: 0;
+}
+
+.header__burger {
+  display: none;
+  width: 50px;
+  height: 22px;
+  padding-top: 10px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+@media (max-width: 765px) {
+  .header__burger {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+  }
+}
+
+.header__burger span {
+  background-color: #FFFFFF;
+  width: 70%;
+  height: 2px;
+  transform: scale(1);
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: "";
+  background-color: #FFFFFF;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.active.header__burger span {
+  transform: scale(0);
+}
+
+.active.header__burger::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.active.header__burger::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
 }
 
 .footer {

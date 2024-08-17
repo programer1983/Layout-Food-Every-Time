@@ -7,6 +7,20 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+/* ================================================================================== */
+
+const burgerButton = document.querySelector(".header__burger")
+const navList = document.querySelector(".menu")
+const html = document.querySelector("html")
+
+burgerButton.addEventListener("click", open)
+
+function open(){
+  navList.classList.toggle("active-menu")
+  burgerButton.classList.toggle('active')
+  html.classList.toggle("unscroll")
+}
+
 /* =========================================================================== */
 
 const animHeroTitles = document.querySelectorAll('.hero__title')
