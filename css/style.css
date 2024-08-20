@@ -160,9 +160,40 @@ body {
 .hero::before {
   left: 3rem;
 }
+@media (max-width: 1220px) {
+  .hero::before {
+    bottom: 15rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 560px) {
+  .hero::before {
+    background-position: center, right;
+    bottom: 13rem;
+    background-size: 40rem 32rem, 0rem 0rem;
+    width: 100%;
+  }
+}
+@media (max-width: 371px) {
+  .hero::before {
+    bottom: 10rem;
+  }
+}
+@media (max-width: 331px) {
+  .hero::before {
+    bottom: 5rem;
+  }
+}
 .hero::after {
   right: 3rem;
   transform: scaleX(-1);
+}
+@media (max-width: 1220px) {
+  .hero::after {
+    display: none;
+  }
 }
 .hero .hero__arrow {
   position: absolute;
@@ -177,6 +208,26 @@ body {
 }
 .hero__content {
   transform: translateY(-50%);
+}
+@media (max-width: 1220px) {
+  .hero__content {
+    transform: translateY(-80%);
+  }
+}
+@media (max-width: 530px) {
+  .hero__content {
+    transform: translateY(-70%);
+  }
+}
+@media (max-width: 370px) {
+  .hero__content {
+    transform: translateY(-55%);
+  }
+}
+@media (max-width: 330px) {
+  .hero__content {
+    transform: translateY(-40%);
+  }
 }
 .hero__title {
   color: #FFFFFF;
@@ -193,6 +244,11 @@ body {
 .hero__title::before, .hero__title::after {
   margin-top: -6rem;
 }
+@media (max-width: 830px) {
+  .hero__title::before, .hero__title::after {
+    display: none;
+  }
+}
 .hero__title.active {
   transform: translateY(0);
   opacity: 1;
@@ -207,6 +263,11 @@ body {
   transform: translateY(50px);
   opacity: 0;
   transition: 0.3s ease 0.5s;
+}
+@media (max-width: 1220px) {
+  .hero__description {
+    margin-bottom: 5rem;
+  }
 }
 .hero__description.active {
   transform: translateY(0);

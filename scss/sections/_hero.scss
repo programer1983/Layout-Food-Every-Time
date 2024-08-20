@@ -7,6 +7,11 @@
     background-size: cover;
     background-position: center bottom 11rem;
     margin-bottom: 8rem;
+
+    @media (max-width: 770px){
+        
+     }
+
     &::before,
     &::after{
         content: "";
@@ -24,10 +29,33 @@
     }
     &::before{
         left: 3rem;
-      }
+         
+        @media (max-width: 1220px){
+           bottom: 15rem;
+           left: 0;
+           right: 0;
+           margin: 0 auto;
+        }
+        @media (max-width: 560px){
+            background-position: center, right;
+            bottom: 13rem;
+            background-size: 40rem 32rem, 0rem 0rem;
+            width: 100%;
+         }
+         @media (max-width: 371px){
+            bottom: 10rem;
+         }
+         @media (max-width: 331px){
+            bottom: 5rem;
+         }
+    }
     &::after{
         right: 3rem;
         transform: scaleX(-1);
+        
+        @media (max-width: 1220px){
+            display: none;
+        }
     }
     .hero__arrow{
         position: absolute;
@@ -43,6 +71,19 @@
     }
     &__content{
         transform: translateY(-50%);
+
+        @media (max-width: 1220px){
+            transform: translateY(-80%);
+        }
+        @media (max-width: 530px){
+            transform: translateY(-70%);
+         }
+         @media (max-width: 370px){
+            transform: translateY(-55%);
+         }
+         @media (max-width: 330px){
+            transform: translateY(-40%);
+         }
     }
     &__title {
         color: $c-white;
@@ -58,6 +99,10 @@
         &::before,
         &::after{
             margin-top: -6rem;
+
+            @media (max-width: 830px){
+                display: none;
+            }
         }
         &.active{
             transform: translateY(0);
@@ -74,6 +119,10 @@
         transform: translateY(50px);
         opacity: 0;
         transition: .3s ease .5s;
+
+        @media (max-width: 1220px){
+            margin-bottom: 5rem;
+        }
 
         &.active{
             transform: translateY(0);
