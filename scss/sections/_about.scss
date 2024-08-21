@@ -3,9 +3,15 @@
     &__inner {
        display: flex;
        gap: 10rem;
+
+       @media (max-width: 1080px){
+          flex-direction: column;
+          align-items: center;
+          row-gap: 15rem;
+       }
     }
-    // display: flex;
     &__content {
+        position: relative;
         width: 44rem;
         transform: translateX(-50px);
         opacity: 0;
@@ -26,13 +32,37 @@
           margin-bottom: 2rem;
           -webkit-text-stroke: 0;
         }
+
+        @media (max-width: 1080px){
+            text-align: center;
+            margin-top: -5rem;
+         }
+         @media (max-width: 450px){
+            width: 350px;
+            margin: 0 auto;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            margin-top: -7rem;
+        }
     }
     &__text {
         color: rgba($c-black, 0.5);
         font-size: 16px;
         margin-bottom: 4.4rem;
+
+        @media (max-width: 1080px){
+            text-align: center;
+         }
+         @media (max-width: 450px){
+            width: 300px;
+            margin:  0 auto;
+            margin-bottom: 5rem;
+        }
     }
     &__link {
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
     }
     &__images {
         position: relative;
@@ -61,8 +91,17 @@
             border-radius: 50%;
             top: -10px;
             left: -3px;
+            
+            @media (max-width: 600px){
+                display: none;
+            }
         }
     }
+    &__image{
+        @media (max-width: 600px){
+            display: none;
+        }
+     }
     &__breakfast {
         position: absolute;
         top: 0;
@@ -70,10 +109,39 @@
         width: 19rem;
         height: 19rem;
         transform: translateY(-3rem);
+
+        @media (max-width: 600px){
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 50rem;
+            height: 50rem;
+        }
+        @media (max-width: 480px){
+            width: 35rem;
+            height: 35rem;
+        }
+        @media (max-width: 340px){
+            width: 30rem;
+            height: 30rem;
+        }
     }
     &__img {
         width: 100%;
         object-fit: contain;
+
+        @media (max-width: 600px){
+            width: 50rem;
+            height: 50rem;
+        }
+        @media (max-width: 480px){
+            width: 35rem;
+            height: 35rem;
+        }
+        @media (max-width: 340px){
+            width: 30rem;
+            height: 30rem;
+        }
     }
     &__price {
         position: absolute;
@@ -86,5 +154,17 @@
         font-weight: 700;
         font-family: $font_title;
         padding: 7px 13px;
+
+        @media (max-width: 600px){
+            bottom: 40rem;
+            left: 5rem;
+            width: 7rem;
+        }
+        @media (max-width: 480px){
+            bottom: 30rem;
+        }
+        @media (max-width: 340px){
+            bottom: 25rem;
+        }
     }
 }
