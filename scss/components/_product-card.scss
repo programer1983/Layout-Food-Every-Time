@@ -13,6 +13,12 @@
             width: 27rem;
             height: 27rem;
             bottom: 15rem;
+
+            @media (max-width: 400px){
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+            }
         }
         .product-card__name{
             color: $c-white;

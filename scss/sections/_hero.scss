@@ -8,9 +8,13 @@
     background-position: center bottom 11rem;
     margin-bottom: 8rem;
 
-    @media (max-width: 770px){
-        
+    @media (max-width: 1120px){
+        margin-bottom: 3rem;
      }
+     @media (max-width: 600px){
+        margin-bottom: -3rem;
+     }
+
 
     &::before,
     &::after{
