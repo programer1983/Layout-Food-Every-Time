@@ -5,6 +5,15 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.reviews__arrow--next',
       prevEl: '.reviews__arrow--prev',
     },
+
+    breakpoints: {
+        800: {
+          slidesPerView: 2,
+        },
+        0: {
+          slidesPerView: 1,
+        }
+      },
 });
 
 /* ================================================================================== */

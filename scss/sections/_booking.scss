@@ -35,6 +35,16 @@
             right: -7rem;
             transform: scaleX(-1);
           }
+
+          @media (max-width: 600px){
+            margin-top: -15rem;
+          }
+          @media (max-width: 480px){
+            margin-top: -30rem;
+          }
+          @media (max-width: 340px){
+            margin-top: -40rem;
+          }
     }
     &__arrow {
         position: absolute;
@@ -49,6 +59,10 @@
         -webkit-text-stroke: 2px $c-white;
         margin: 0 auto 3rem;
         text-align: center;
+
+        @media (max-width: 550px){
+           font-size: 4rem;
+        }
     }
     &__text {
         color:  rgba($c-white, 0.5);

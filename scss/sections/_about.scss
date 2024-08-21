@@ -96,7 +96,12 @@
                 display: none;
             }
         }
+
+        @media (max-width: 600px){
+            margin-bottom: 0;
+        }
     }
+
     &__image{
         @media (max-width: 600px){
             display: none;

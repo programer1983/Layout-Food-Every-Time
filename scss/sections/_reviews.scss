@@ -6,12 +6,27 @@
        align-items: center;
        padding-right: 5rem;
        margin-bottom: 6rem;
+
+       @media (max-width: 800px){
+        padding-right: 0;
+       }   
     }
     &__title {
         max-width: 57rem;
+
+        @media (max-width: 800px){
+            font-size: 4rem;
+            text-align: center;
+            margin: 0 auto -2rem;
+        }
     }
     &__nav {
         display: flex;
+
+        @media (max-width: 800px){
+            display: none;
+        }
+        
     }
     &__arrow {
         width: 100px;
@@ -42,6 +57,9 @@
         }
     }
     &__slider {
+        @media (max-width: 800px){
+           width: 110%;
+        }
     }
     &__slider-list {
     }
@@ -49,5 +67,9 @@
         display: flex;
         flex-direction: column;
     }
+
+    @media (max-width: 800px){
+        margin-top: -6rem;
+     }
 }
 

@@ -481,6 +481,11 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .about__images {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
   .about__image {
     display: none;
   }
@@ -601,6 +606,21 @@ body {
   right: -7rem;
   transform: scaleX(-1);
 }
+@media (max-width: 600px) {
+  .booking__inner {
+    margin-top: -15rem;
+  }
+}
+@media (max-width: 480px) {
+  .booking__inner {
+    margin-top: -30rem;
+  }
+}
+@media (max-width: 340px) {
+  .booking__inner {
+    margin-top: -40rem;
+  }
+}
 .booking__arrow {
   position: absolute;
   top: -3rem;
@@ -614,6 +634,11 @@ body {
   -webkit-text-stroke: 2px #FFFFFF;
   margin: 0 auto 3rem;
   text-align: center;
+}
+@media (max-width: 550px) {
+  .booking__title {
+    font-size: 4rem;
+  }
 }
 .booking__text {
   color: rgba(255, 255, 255, 0.5);
@@ -636,11 +661,28 @@ body {
   padding-right: 5rem;
   margin-bottom: 6rem;
 }
+@media (max-width: 800px) {
+  .reviews__head {
+    padding-right: 0;
+  }
+}
 .reviews__title {
   max-width: 57rem;
 }
+@media (max-width: 800px) {
+  .reviews__title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto -2rem;
+  }
+}
 .reviews__nav {
   display: flex;
+}
+@media (max-width: 800px) {
+  .reviews__nav {
+    display: none;
+  }
 }
 .reviews__arrow {
   width: 100px;
@@ -665,9 +707,19 @@ body {
 .reviews__arrow--next.swiper-button-disabled {
   transform: scaleX(-1);
 }
+@media (max-width: 800px) {
+  .reviews__slider {
+    width: 110%;
+  }
+}
 .reviews__slider-item {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 800px) {
+  .reviews {
+    margin-top: -6rem;
+  }
 }
 
 .header {
@@ -1011,6 +1063,11 @@ body {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 550px) {
+  .form__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .form__input {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1053,10 +1110,20 @@ body {
   max-width: 37rem;
   margin-bottom: 4rem;
 }
+@media (max-width: 800px) {
+  .reviews-card__title {
+    text-align: center;
+  }
+}
 .reviews-card__text {
   line-height: 1.9;
   color: rgba(18, 18, 18, 0.7);
   margin-bottom: 3rem;
+}
+@media (max-width: 800px) {
+  .reviews-card__text {
+    text-align: center;
+  }
 }
 .reviews-card__info {
   display: flex;
@@ -1080,4 +1147,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: space;
+}
+@media (max-width: 800px) {
+  .reviews-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
