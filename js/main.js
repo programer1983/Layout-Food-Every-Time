@@ -32,6 +32,31 @@ function open(){
 
 /* =========================================================================== */
 
+const anchors = document.querySelectorAll('[href*="#"]');
+
+anchors.forEach(anchor => {
+    anchor.addEventListener("click", (event) => {
+        event.preventDefault()
+
+        const blockID = anchor.getAttribute("href").substring(1)
+        document.getElementById(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        })
+    })
+})
+
+
+navList.querySelectorAll(".menu__link").forEach(link => {
+    link.addEventListener("click", () => {
+      burgerButton.classList.remove("active")
+      navList.classList.remove("active-menu")
+      html.classList.remove("unscroll")
+    })
+  })
+
+/* =========================================================================== */
+
 const animHeroTitles = document.querySelectorAll('.hero__title')
 
 if (animHeroTitles.length > 0){

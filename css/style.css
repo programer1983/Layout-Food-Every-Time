@@ -379,6 +379,7 @@ body {
   opacity: 1;
 }
 .about {
+  scroll-margin-top: 10rem;
   margin-bottom: 15rem;
 }
 .about__inner {
@@ -572,6 +573,7 @@ body {
 }
 
 .booking {
+  scroll-margin-top: 3rem;
   margin-bottom: 11rem;
 }
 .booking__inner {
